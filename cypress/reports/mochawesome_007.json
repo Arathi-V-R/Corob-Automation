@@ -1,0 +1,106 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-27T05:57:50.690Z",
+    "end": "2023-01-27T05:58:00.040Z",
+    "duration": 9350,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "70d0385f-e664-48d5-ae7d-77b71eeb009d",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/xdata_analytics.cy.js",
+      "file": "cypress/e2e/0-Corob/xdata_analytics.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "17686bce-b52c-4901-b3b4-656c4960dc40",
+          "title": "All xdata analytics tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Xdata analytics with data",
+              "fullTitle": "All xdata analytics tests Xdata analytics with data",
+              "timedOut": null,
+              "duration": 8274,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('#x-data > .label').click();\ncy.get('#x-data-analytics1 > .label').click();\ncy.get('.table-container > :nth-child(3)').click(); //        cy.get('.table-container > :nth-child(3)').click()\n//        cy.get('.table-container > :nth-child(8)').click()\n//        cy.get('input[id=\":rq:\"]').type('09/01/2022')\n//        cy.get('input[id=\":rr:\"]').type('11/01/2022')\n//        cy.get(':nth-child(9) > .MuiFormControlLabel-root > .MuiTypography-root').click()\n//        cy.get('.jss81 > .MuiButtonBase-root').should('contain', 'Export')\n//        cy.get('.jss81 > .MuiButtonBase-root').click()\n//        cy.get('.MuiButtonBase-root').should('have.class','MuiButtonBase-root')\n//        cy.get('.jss78 > .MuiButtonBase-root').click()\n//        cy.get('.MuiButtonBase-root').should('have.class','MuiButtonBase-root')",
+              "err": {},
+              "uuid": "b2a08043-cab5-4b36-a131-b747f1aa351d",
+              "parentUUID": "17686bce-b52c-4901-b3b4-656c4960dc40",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b2a08043-cab5-4b36-a131-b747f1aa351d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 8274,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

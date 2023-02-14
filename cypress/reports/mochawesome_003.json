@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-27T05:55:34.539Z",
+    "end": "2023-01-27T05:55:46.882Z",
+    "duration": 12343,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cbf7e7b1-a8ab-4d69-901a-1ebbac02cda1",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/legacy_analytics.cy.js",
+      "file": "cypress/e2e/0-Corob/legacy_analytics.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0a9c2fee-46a0-4288-be4c-51c0fe0e9026",
+          "title": "All legacy analytics tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Legacy analytics with data",
+              "fullTitle": "All legacy analytics tests Legacy analytics with data",
+              "timedOut": null,
+              "duration": 9082,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-analytics > .label').click();\ncy.get(':nth-child(4) > .hoverTextCursor').click();\ncy.get('input[id=\":rq:\"]').type('09/01/2022');\ncy.get('input[id=\":rr:\"]').type('11/01/2022');\ncy.get('.jss81 > .MuiButtonBase-root').should('contain', 'Export');\ncy.get('.jss81 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root'); //        cy.get('.jss88 > .MuiButtonBase-root').click()\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "35d65a6e-2ddf-45fd-92e0-d7772eb91227",
+              "parentUUID": "0a9c2fee-46a0-4288-be4c-51c0fe0e9026",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Legacy analytics without data",
+              "fullTitle": "All legacy analytics tests Legacy analytics without data",
+              "timedOut": null,
+              "duration": 2174,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-analytics > .label').click();\ncy.get(':nth-child(4) > .hoverTextCursor').click();\ncy.get('.jss81 > .MuiButtonBase-root').should('contain', 'Export');\ncy.get('.jss81 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root'); //        cy.get('.jss88 > .MuiButtonBase-root').click()\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "9a708679-bc05-45d0-a9e9-6a2225f95642",
+              "parentUUID": "0a9c2fee-46a0-4288-be4c-51c0fe0e9026",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "35d65a6e-2ddf-45fd-92e0-d7772eb91227",
+            "9a708679-bc05-45d0-a9e9-6a2225f95642"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11256,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

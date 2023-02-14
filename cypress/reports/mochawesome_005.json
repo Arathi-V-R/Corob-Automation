@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-27T05:56:48.313Z",
+    "end": "2023-01-27T05:57:11.309Z",
+    "duration": 22996,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8db2c6c3-1c9d-4dfa-b8f0-eeb42f156e63",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/workspace.cy.js",
+      "file": "cypress/e2e/0-Corob/workspace.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+          "title": "All workspace tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create workspace user with data",
+              "fullTitle": "All workspace tests Create workspace user with data",
+              "timedOut": null,
+              "duration": 9749,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get('input[id=\":r2:\"]').type('new@gmail.com');\ncy.get('input[id=\":r3:\"]').type('SML');\ncy.get('input[id=\":r4:\"]').type('password');\ncy.get('input[id=\":r5:\"]').type('password');\ncy.get(':nth-child(5) > .MuiTypography-root').click();\ncy.get(':nth-child(9) > .MuiButtonBase-root').should('contain', 'Create');\ncy.get(':nth-child(9) > .MuiButtonBase-root').click();\ncy.get('.swal2-confirm').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "2fd72371-97d5-4f82-af1d-dc02e8af237b",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create workspace user without data",
+              "fullTitle": "All workspace tests Create workspace user without data",
+              "timedOut": null,
+              "duration": 1981,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get(':nth-child(9) > .MuiButtonBase-root').should('contain', 'Create');\ncy.get(':nth-child(9) > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "e3aecbf7-c325-482f-98b3-993b0cc4b6f5",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Create workspace user with invalid data",
+              "fullTitle": "All workspace tests Create workspace user with invalid data",
+              "timedOut": null,
+              "duration": 3434,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get('input[id=\":r2:\"]').type('newusergmail.com');\ncy.get('input[id=\":r3:\"]').type('SML');\ncy.get('input[id=\":r4:\"]').type('password');\ncy.get('input[id=\":r5:\"]').type('zxcvbn');\ncy.get(':nth-child(5) > .MuiTypography-root').click();\ncy.get(':nth-child(9) > .MuiButtonBase-root').should('contain', 'Create');\ncy.get(':nth-child(9) > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "8bb43017-0fb7-4fc6-9138-f897b454fb37",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit workspace user with changes",
+              "fullTitle": "All workspace tests Edit workspace user with changes",
+              "timedOut": null,
+              "duration": 2131,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get(':nth-child(12) > [style=\"width: 13%; display: flex;\"] > [aria-label=\"Change\"]').click();\ncy.get(':nth-child(5) > .MuiTypography-root').click();\ncy.get(':nth-child(6) > .MuiTypography-root').click();\ncy.get('.jss32 > .MuiButtonBase-root').should('contain', 'Update');\ncy.get('.jss32 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "33109965-e583-40e7-98ee-bafb372d007f",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Edit workspace user without make changes",
+              "fullTitle": "All workspace tests Edit workspace user without make changes",
+              "timedOut": null,
+              "duration": 2055,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get(':nth-child(12) > [style=\"width: 13%; display: flex;\"] > [aria-label=\"Change\"]').click(); //    cy.get('.jss32 > .MuiButtonBase-root').click()\ncy.get('.jss32 > .MuiButtonBase-root').should('contain', 'Update');\ncy.get('.jss32 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "7bf12abe-c327-431e-9c20-462db419b3b1",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete workspace user ",
+              "fullTitle": "All workspace tests Delete workspace user ",
+              "timedOut": null,
+              "duration": 2462,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');\ncy.get(':nth-child(12) > [style=\"width: 13%; display: flex;\"] > [aria-label=\"Delete\"] > .action-icon').click();\ncy.get('.jss40 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.jss40 > .MuiButtonBase-root').click();\ncy.get('.swal2-confirm').click();",
+              "err": {},
+              "uuid": "9a6c1118-a677-43a8-916d-adba764a1ce5",
+              "parentUUID": "5b4c219b-a569-432f-8b11-9824d60c7b03",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2fd72371-97d5-4f82-af1d-dc02e8af237b",
+            "e3aecbf7-c325-482f-98b3-993b0cc4b6f5",
+            "8bb43017-0fb7-4fc6-9138-f897b454fb37",
+            "33109965-e583-40e7-98ee-bafb372d007f",
+            "7bf12abe-c327-431e-9c20-462db419b3b1",
+            "9a6c1118-a677-43a8-916d-adba764a1ce5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21812,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

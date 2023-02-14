@@ -1,0 +1,248 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 0,
+    "pending": 0,
+    "failures": 7,
+    "start": "2023-01-27T05:55:50.197Z",
+    "end": "2023-01-27T05:56:41.771Z",
+    "duration": 51574,
+    "testsRegistered": 7,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "582ab071-bae7-4297-ba86-a20c44fe568b",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/theme.cy.js",
+      "file": "cypress/e2e/0-Corob/theme.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+          "title": "All theme tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Theme create & delete",
+              "fullTitle": "All theme tests Theme create & delete",
+              "timedOut": null,
+              "duration": 12814,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password'); // create theme\ncy.get('#themes > .label').click();\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get('input[id=\":r2:\"]').type('test_theme');\ncy.get('.jss78 > .MuiButtonBase-root').should('contain', 'Create');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); // Delete theme\ncy.get('.action-icon').click();\ncy.get('.jss83 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:14:43)",
+                "diff": null
+              },
+              "uuid": "b25d8ab7-d5b2-4b46-9417-e91a7dfa3362",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version create",
+              "fullTitle": "All theme tests Theme version create",
+              "timedOut": null,
+              "duration": 7430,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password'); // create theme\ncy.get('#themes > .label').click();\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get('input[id=\":r2:\"]').type('test_theme');\ncy.get('.jss78 > .MuiButtonBase-root').should('contain', 'Create');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); // upload logos & create theme version\ncy.get('.css-10pmp43').click();\ncy.get(':nth-child(2) > .css-1dqbbfy > .box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/images.png');\ncy.get(':nth-child(3) > .css-1dqbbfy > .box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/asian-paints-vector-logo.png');\ncy.get('[style=\"display: flex;\"] > .MuiButton-text').click(); // Delete theme\ncy.get('#themes > .label').click();\ncy.get(':nth-child(3) > [style=\"width: 10%;\"] > .action-icon').click();\ncy.get('.jss124 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:34:43)",
+                "diff": null
+              },
+              "uuid": "22584ac1-3cce-4074-b006-071c92aee7a5",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version show colors",
+              "fullTitle": "All theme tests Theme version show colors",
+              "timedOut": null,
+              "duration": 6271,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password'); // create theme\ncy.get('#themes > .label').click();\ncy.get('.table-header-right-container > .MuiButtonBase-root').should('contain', 'Create New');\ncy.get('.table-header-right-container > .MuiButtonBase-root').click();\ncy.get('input[id=\":r2:\"]').type('test_theme');\ncy.get('.jss78 > .MuiButtonBase-root').should('contain', 'Create');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); // upload logos & create theme version\ncy.get('.css-10pmp43').click();\ncy.get(':nth-child(2) > .css-1dqbbfy > .box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/images.png');\ncy.get(':nth-child(3) > .css-1dqbbfy > .box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/asian-paints-vector-logo.png');\ncy.get('[style=\"display: flex;\"] > .MuiButton-text').click(); // show colors\ncy.get('#fill').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<button.MuiButtonBase-root.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMeduim.MuiButton-textSizeMeduim.appBtn.css-ajtw20>' to contain 'Create'\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:61:43)",
+                "diff": null
+              },
+              "uuid": "0b5fd1ab-944c-4e3e-9468-ed5914bd4d34",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version show logos",
+              "fullTitle": "All theme tests Theme version show logos",
+              "timedOut": null,
+              "duration": 5884,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#themes > .label').click();\ncy.get('.css-10pmp43').click(); // show logos\ncy.get('#picture_1_').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:80:7)",
+                "diff": null
+              },
+              "uuid": "9d64d9a9-7cd6-4b25-afba-b4c61e34aeb3",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version download",
+              "fullTitle": "All theme tests Theme version download",
+              "timedOut": null,
+              "duration": 5956,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#themes > .label').click();\ncy.get('.css-10pmp43').click(); // download\ncy.get('[width=\"16\"]').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:90:7)",
+                "diff": null
+              },
+              "uuid": "c4729e0d-ca4f-496f-808b-1707fd10a959",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version apply settings",
+              "fullTitle": "All theme tests Theme version apply settings",
+              "timedOut": null,
+              "duration": 6124,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#themes > .label').click();\ncy.get('.css-10pmp43').click();\ncy.get('[style=\"display: flex;\"] > .MuiButton-text').click(); // apply settings\ncy.get(':nth-child(4) > [style=\"width: 20%;\"] > [width=\"17\"]').click();\ncy.get('form > div > .MuiButton-text').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:100:7)",
+                "diff": null
+              },
+              "uuid": "30f0f0a9-f6cd-4685-b688-f8719d4abe3f",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Theme version delete",
+              "fullTitle": "All theme tests Theme version delete",
+              "timedOut": null,
+              "duration": 5893,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#themes > .label').click();\ncy.get('.css-10pmp43').click(); // delete theme version\ncy.get(':nth-child(4) > [style=\"width: 20%;\"] > [width=\"15.833\"]').click();\ncy.get('.jss100 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root'); // Delete theme\ncy.get('#themes > .label').click();\ncy.get(':nth-child(3) > [style=\"width: 10%;\"] > .action-icon').click();\ncy.get('.jss119 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.css-10pmp43`, but never found it.\n    at Context.eval (webpack:///./cypress/e2e/0-Corob/theme.cy.js:112:7)",
+                "diff": null
+              },
+              "uuid": "1a424496-907a-4679-9f50-a1f609c342d1",
+              "parentUUID": "ee3c3400-29b8-4e7f-81f3-90d90c74d682",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b25d8ab7-d5b2-4b46-9417-e91a7dfa3362",
+            "22584ac1-3cce-4074-b006-071c92aee7a5",
+            "0b5fd1ab-944c-4e3e-9468-ed5914bd4d34",
+            "9d64d9a9-7cd6-4b25-afba-b4c61e34aeb3",
+            "c4729e0d-ca4f-496f-808b-1707fd10a959",
+            "30f0f0a9-f6cd-4685-b688-f8719d4abe3f",
+            "1a424496-907a-4679-9f50-a1f609c342d1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 50372,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

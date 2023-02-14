@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-27T05:54:34.644Z",
+    "end": "2023-01-27T05:54:49.567Z",
+    "duration": 14923,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "064eafbc-a8a7-47fa-aefc-81321a2d0b3a",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/Login.cy.js",
+      "file": "cypress/e2e/0-Corob/Login.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "18351817-3624-407a-809e-8e3f8394f422",
+          "title": "All login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login with valid credentials",
+              "fullTitle": "All login tests Login with valid credentials",
+              "timedOut": null,
+              "duration": 9578,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', 'password');",
+              "err": {},
+              "uuid": "ba1d264d-64a1-4d27-8f27-3b5e8f9391cf",
+              "parentUUID": "18351817-3624-407a-809e-8e3f8394f422",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid email",
+              "fullTitle": "All login tests Login with invalid email",
+              "timedOut": null,
+              "duration": 1344,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('zxcvbnm@simelabs.com', 'password');",
+              "err": {},
+              "uuid": "dfc61a91-9ce0-4892-8cd6-ba4e013a28c2",
+              "parentUUID": "18351817-3624-407a-809e-8e3f8394f422",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login with invalid password",
+              "fullTitle": "All login tests Login with invalid password",
+              "timedOut": null,
+              "duration": 1126,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', '123456');",
+              "err": {},
+              "uuid": "e06db897-f3ad-4f59-9b84-c7b86c8b1879",
+              "parentUUID": "18351817-3624-407a-809e-8e3f8394f422",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login without email",
+              "fullTitle": "All login tests Login without email",
+              "timedOut": null,
+              "duration": 733,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login(' ', 'password');",
+              "err": {},
+              "uuid": "f9e4bc22-118f-4995-bc2d-eb0568d4937c",
+              "parentUUID": "18351817-3624-407a-809e-8e3f8394f422",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login without password",
+              "fullTitle": "All login tests Login without password",
+              "timedOut": null,
+              "duration": 922,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('arathi.vr@simelabs.com', ' ');",
+              "err": {},
+              "uuid": "88d8ce0d-aa13-4bea-8ba1-88a1dd00074d",
+              "parentUUID": "18351817-3624-407a-809e-8e3f8394f422",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ba1d264d-64a1-4d27-8f27-3b5e8f9391cf",
+            "dfc61a91-9ce0-4892-8cd6-ba4e013a28c2",
+            "e06db897-f3ad-4f59-9b84-c7b86c8b1879",
+            "f9e4bc22-118f-4995-bc2d-eb0568d4937c",
+            "88d8ce0d-aa13-4bea-8ba1-88a1dd00074d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 13703,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}

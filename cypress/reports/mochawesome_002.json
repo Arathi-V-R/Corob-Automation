@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-01-27T05:55:04.993Z",
+    "end": "2023-01-27T05:55:29.832Z",
+    "duration": 24839,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9af92c0b-ea1a-492c-8f7b-8e1d96065bf7",
+      "title": "",
+      "fullFile": "cypress/e2e/0-Corob/legacy.cy.js",
+      "file": "cypress/e2e/0-Corob/legacy.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+          "title": "All legacy database tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Legacy database create,upload & delete ",
+              "fullTitle": "All legacy database tests Legacy database create,upload & delete ",
+              "timedOut": null,
+              "duration": 10601,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New');\ncy.get('.table-header-right-container > :nth-child(1)').click();\ncy.get('input[id=\":rb:\"]').type('test_db');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); //   upload db\ncy.get('.hoverTextCursor').click();\ncy.get('.box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/tintsystem.zip');\ncy.get('[style=\"display: flex; justify-content: end;\"] > .MuiButtonBase-root').click(); //   delete\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.action-icon').click();\ncy.get('.jss120 > .MuiButtonBase-root').click();\ncy.get('.swal2-confirm').click();",
+              "err": {},
+              "uuid": "b11a92d2-8be0-48c2-b05b-1b6600796785",
+              "parentUUID": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "db creation with null value",
+              "fullTitle": "All legacy database tests db creation with null value",
+              "timedOut": null,
+              "duration": 2032,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New');\ncy.get('.table-header-right-container > :nth-child(1)').click();\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');",
+              "err": {},
+              "uuid": "68169081-2f52-41d7-8325-d231ca195953",
+              "parentUUID": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Legacy database upload without file ",
+              "fullTitle": "All legacy database tests Legacy database upload without file ",
+              "timedOut": null,
+              "duration": 3266,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New');\ncy.get('.table-header-right-container > :nth-child(1)').click();\ncy.get('input[id=\":rb:\"]').type('test_db');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); //   upload db\ncy.get('.hoverTextCursor').click();\ncy.get('[style=\"display: flex; justify-content: end;\"] > .MuiButtonBase-root').click(); //   delete\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.action-icon').click();\ncy.get('.jss120 > .MuiButtonBase-root').click();\ncy.get('.swal2-confirm').click();",
+              "err": {},
+              "uuid": "aa7ebe7c-f87e-4c25-afcc-5ab654fc79e4",
+              "parentUUID": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Legacy database upload with wrong file ",
+              "fullTitle": "All legacy database tests Legacy database upload with wrong file ",
+              "timedOut": null,
+              "duration": 3661,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New');\ncy.get('.table-header-right-container > :nth-child(1)').click();\ncy.get('input[id=\":rb:\"]').type('test_db');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); //   upload db\ncy.get('.hoverTextCursor').click();\ncy.get('.box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/2-0.xdata');\ncy.get('[style=\"display: flex; justify-content: end;\"] > .MuiButtonBase-root').click();\ncy.get('.jss104 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root'); //   delete\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.action-icon').click();\ncy.get('.jss120 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click();",
+              "err": {},
+              "uuid": "bbd0608f-2b48-473f-ad67-1d30f2bea876",
+              "parentUUID": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Legacy database version download & delete",
+              "fullTitle": "All legacy database tests Legacy database version download & delete",
+              "timedOut": null,
+              "duration": 4051,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "login.Login('varsha@gmail.com', 'password');\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New');\ncy.get('.table-header-right-container > :nth-child(1)').click();\ncy.get('input[id=\":rb:\"]').type('test_db');\ncy.get('.jss78 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click(); //   upload db\ncy.get('.hoverTextCursor').click();\ncy.get('.box-div > div > .MuiButtonBase-root').selectFile('cypress/fixtures/tintsystem.zip');\ncy.get('[style=\"display: flex; justify-content: end;\"] > .MuiButtonBase-root').click(); // download & delete uploaded db\ncy.get('[width=\"16\"]').click();\ncy.get('[width=\"15.833\"]').click();\ncy.get('.jss104 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root'); //   delete\ncy.get('#legacy-databases > .label').click();\ncy.get('#legacy-databases-databases > .label').click();\ncy.get('.action-icon').click();\ncy.get('.jss120 > .MuiButtonBase-root').click();\ncy.get('.MuiButtonBase-root').should('have.class', 'MuiButtonBase-root');\ncy.get('.swal2-confirm').click();",
+              "err": {},
+              "uuid": "e32378cc-c5ac-4df8-8972-27e992dac816",
+              "parentUUID": "46ef9d0c-8542-43a7-9bd3-39f1f955befd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b11a92d2-8be0-48c2-b05b-1b6600796785",
+            "68169081-2f52-41d7-8325-d231ca195953",
+            "aa7ebe7c-f87e-4c25-afcc-5ab654fc79e4",
+            "bbd0608f-2b48-473f-ad67-1d30f2bea876",
+            "e32378cc-c5ac-4df8-8972-27e992dac816"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23611,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "JSON": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
