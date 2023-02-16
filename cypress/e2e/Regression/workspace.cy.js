@@ -10,7 +10,7 @@ describe('All workspace tests', () => {
       cy.get('#workspace-users > .label').click()
       cy.get('.table-header-right-container > .MuiButtonBase-root').click()
       cy.get('input[id=":r2:"]').type('new@gmail.com')
-//      cy.get('input[id=":r3:"]').type('SML')
+      cy.get('input[id=":r3:"]').type('SML')
       cy.get('input[id=":r4:"]').type('password')
       cy.get('input[id=":r5:"]').type('password')
       cy.get(':nth-child(5) > .MuiTypography-root').click()
