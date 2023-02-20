@@ -4,7 +4,7 @@ const login = new LoginPage()
 
 describe('All xdata tests', () => {
   it('xdata create,upload & delete', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#x-data > .label').click()
     cy.contains('Buckets').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -32,7 +32,7 @@ describe('All xdata tests', () => {
   })
 
   it('xdata upload to an existing bucket', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -62,7 +62,7 @@ describe('All xdata tests', () => {
   })
 
   it('xdata creation with null value', ()=>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -72,7 +72,7 @@ describe('All xdata tests', () => {
   })
 
   it('xdata upload without file ', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -98,7 +98,7 @@ describe('All xdata tests', () => {
     })
 
   it('xdata upload with wrong file ', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -126,14 +126,14 @@ describe('All xdata tests', () => {
     })
 
   it('xdata downloads log', () => {
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('[style="margin-left: 30px;"]').click()
   })
 
   it('xdata upload & download', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.contains('Buckets').click()
     cy.get('#x-data-buckets > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')

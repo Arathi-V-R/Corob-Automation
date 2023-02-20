@@ -5,7 +5,7 @@ const login = new LoginPage()
 
 describe('All legacy database tests', () => {
   it('Legacy database create,upload & delete ', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#legacy-databases > .label').click()
     cy.get('#legacy-databases-databases > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -29,7 +29,7 @@ describe('All legacy database tests', () => {
     })
 
   it('db creation with null value', ()=>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#legacy-databases > .label').click()
     cy.get('#legacy-databases-databases > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -38,7 +38,7 @@ describe('All legacy database tests', () => {
     cy.get('.MuiButtonBase-root').should('have.class','MuiButtonBase-root')
   })
   it('Legacy database upload without file ', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#legacy-databases > .label').click()
     cy.get('#legacy-databases-databases > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -61,7 +61,7 @@ describe('All legacy database tests', () => {
     })
 
   it('Legacy database upload with wrong file ', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#legacy-databases > .label').click()
     cy.get('#legacy-databases-databases > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')
@@ -88,7 +88,7 @@ describe('All legacy database tests', () => {
     })
 
   it('Legacy database version download & delete', () =>{
-    login.Login('arathi.vr@simelabs.com', 'password')
+    login.Login('admin@admin.com', 'admin')
     cy.get('#legacy-databases > .label').click()
     cy.get('#legacy-databases-databases > .label').click()
     cy.get('.table-header-right-container > :nth-child(1)').should('contain', 'Create New')

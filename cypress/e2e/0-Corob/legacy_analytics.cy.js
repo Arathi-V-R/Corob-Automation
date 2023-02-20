@@ -4,7 +4,7 @@ const login = new LoginPage()
 
 describe('All legacy analytics tests', () => {
     it('Legacy analytics with data', () =>{
-        login.Login('arathi.vr@simelabs.com', 'password')
+        login.Login('admin@admin.com', 'admin')
         cy.get('#legacy-databases > .label').click()
         cy.get('#legacy-databases-analytics > .label').click()
         cy.get(':nth-child(4) > .hoverTextCursor').click()
@@ -19,7 +19,7 @@ describe('All legacy analytics tests', () => {
     })
 
     it('Legacy analytics without data', () =>{
-        login.Login('arathi.vr@simelabs.com', 'password')
+        login.Login('admin@admin.com', 'admin')
         cy.get('#legacy-databases > .label').click()
         cy.get('#legacy-databases-analytics > .label').click()
         cy.get(':nth-child(4) > .hoverTextCursor').click()
